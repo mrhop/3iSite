@@ -1,0 +1,200 @@
+$icon-font-path: "../assets/fonts/bootstrap/" !default;
+$text-color: #58585b !default;
+$brand-primary: #58585b !default;
+$navbar-default-color: #fff !default;
+$navbar-default-link-color: #fff !default;
+$navbar-default-bg: $brand-primary !default;
+$navbar-default-link-active-color: #fff !default;
+$navbar-default-link-hover-color: #fff !default;
+$navbar-default-link-active-bg: #ae1e23 !default;
+$navbar-default-link-hover-bg: #ae1e23 !default;
+
+// Navbar brand label
+$navbar-default-brand-color: #0771bb !default;
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+h1, h2, h3 {
+  color: #404041;
+  font-weight: bold;
+}
+
+body {
+  > .container, > .container-fluid {
+    padding-bottom: 40px;
+  }
+}
+
+div.header {
+  padding: 0;
+  div.top-logo {
+    img {
+      height: 100px;
+      margin: 5px 0;
+    }
+  }
+  .navbar.navbar-default {
+    box-shadow: 1px 1px 10px #aaa;
+    border-radius: 0;
+    .container {
+      padding-bottom: 0px;
+      .navbar-collapse {
+        padding-left: 0;
+        padding-right: 0;
+        a {
+          line-height: 20px;
+          letter-spacing: 1px;
+          padding-left: 20px;
+          padding-right: 20px;
+          font-size: 17px;
+          @media (max-width: $screen-md) {
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+    .navbar-toggle {
+      border-color: #aaa;
+      vertical-align: middle;
+    }
+  }
+}
+
+.section-title {
+  border-left: 8px solid $navbar-default-link-hover-bg;
+  padding: 8px 0px 8px 10px;
+  margin-bottom: 40px;
+}
+
+.section-content {
+  font-size: 18px;
+}
+
+a.more {
+  color: $navbar-default-link-hover-bg;
+  border: 1px solid #be9799;
+  padding: 3px 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer {
+  background: $brand-primary;
+  color: #fff;
+  .section1 {
+    font-size: 13px;
+    font-weight: lighter;
+    padding: 50px 20px 30px;
+    margin: 0 auto 20px;
+    border-bottom: 1px solid #ccc;
+    width: 95%;
+    text-align: center;
+    @media (max-width: $screen-sm) {
+      text-align: left;
+      li {
+        margin-bottom: 10px;
+      }
+    }
+    list-style: none;
+    padding-left: 0;
+    img {
+      height: 22px;
+      margin-right: 9px;
+    }
+    .col {
+      line-height: 22px;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+  .section2 {
+    text-align: center;
+    margin-bottom: 0;
+    span {
+      display: inline-block;
+      background: $navbar-default-link-active-bg;
+      padding: 30px;
+      width: 50%;
+    }
+  }
+}
+
+#index {
+  .first-container {
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 1px solid #ccc;
+    .flexslider {
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      border-right: 0;
+      overflow: hidden;
+      background: #dae3ec;
+      img.col {
+        width: 58.33333%;
+        padding: 0;
+        @media(max-width: $screen-xs-max) {
+          width: 100%;
+        }
+      }
+      li.item {
+        position: relative;
+        .flex-caption {
+          left: 150px;
+          top: 120px;
+          position: absolute;
+          text-align: left;
+          padding: 0 15px;
+          h1 {
+            font-size: 36px;
+            font-weight: bold;
+          }
+          h3 {
+            margin-top: 10px;
+            font-size: 30px;
+            font-weight: lighter;
+            color: #fff;
+          }
+        }
+      }
+      &:hover {
+        .flex-direction-nav a {
+          opacity: 1;
+        }
+      }
+      .flex-direction-nav a {
+        height: 51px;
+        margin-top: -25px;
+        width: 26px;
+        opacity: 1;
+        &:before {
+          color: #8594a2;
+          content: '';
+        }
+        &.flex-prev {
+          background-image: url("../assets/images/index/slider/left.png");
+        }
+        &.flex-next {
+          background-image: url("../assets/images/index/slider/right.png");
+        }
+      }
+    }
+  }
+  .second-container {
+    p.two-img {
+      img {
+        height: 210px;
+        &:first-child {
+          width: 40%;
+        }
+        &:last-child {
+          width: 60%;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+
