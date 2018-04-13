@@ -6,6 +6,10 @@ require("flexslider");
 require("bootstrap");
 var utilFun = require("utilFun");
 $(document).ready(function () {
+    $(".navbar-nav li.active").removeClass("active");
+    $(".navbar-nav li." + $("body").attr("id") + "-li").addClass("active");
+    $(".navbar-nav li." + $("body").attr("id") + "-li-parent").addClass("active");
+    $(".left-menu li." + $("body").attr("id")).addClass("active");
     //do something
     if ($("body").attr("id") === 'index') {
         $('.first-container .flexslider').flexslider({
