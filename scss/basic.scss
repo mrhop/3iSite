@@ -12,6 +12,8 @@ $navbar-default-link-hover-bg: #ae1e23 !default;
 // Navbar brand label
 $navbar-default-brand-color: #0771bb !default;
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "swiper";
+
 h1, h2, h3 {
   color: #404041;
   font-weight: bold;
@@ -117,6 +119,65 @@ a.more {
       background: $navbar-default-link-active-bg;
       padding: 30px;
       width: 50%;
+    }
+  }
+}
+
+.top-slider {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ccc;
+  .swiper-container {
+    width: 100%;
+    .swiper-wrapper {
+      padding-left: 0;
+      list-style: none;
+      .swiper-slide {
+        position: relative;
+        text-align: center;
+        > img {
+          width: 100%;
+          height: auto;
+
+        }
+        .caption {
+          left: 150px;
+          top: 100px;
+          position: absolute;
+          text-align: left;
+          padding: 0 15px;
+          h1 {
+            font-size: 36px;
+            font-weight: bold;
+            //color: #fff;
+          }
+          h3 {
+            margin-top: 10px;
+            font-size: 30px;
+            font-weight: lighter;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .swiper-button-prev, .swiper-button-next {
+      transition: all .6s linear;
+      opacity: .6;
+      height: 50px;
+      width: 25px;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .swiper-button-prev {
+      background: url("../assets/images/common/slider/left.png");
+    }
+    .swiper-button-next {
+      background: url("../assets/images/common/slider/right.png");
+    }
+    &:hover {
+      .swiper-button-prev, .swiper-button-next {
+        opacity: .8;
+      }
     }
   }
 }
