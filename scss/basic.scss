@@ -36,6 +36,7 @@ div.header {
   .navbar.navbar-default {
     box-shadow: 1px 1px 10px #aaa;
     border-radius: 0;
+    margin-bottom: 0;
     .container {
       padding-bottom: 0px;
       .navbar-collapse {
@@ -68,7 +69,7 @@ div.header {
   margin-bottom: 40px;
 }
 
-.section-content {
+p {
   font-size: 18px;
 }
 
@@ -150,7 +151,7 @@ a.more {
           h1 {
             font-size: 36px;
             font-weight: bold;
-            //color: #fff;
+            color: #fff;
           }
           h3 {
             margin-top: 10px;
@@ -184,12 +185,7 @@ a.more {
   }
 }
 
-#index {
-  .first-container {
-    padding-left: 0;
-    padding-right: 0;
-    border-bottom: 1px solid #ccc;
-  }
+#index, #about {
   .second-container {
     p.two-img {
       img {
@@ -202,6 +198,27 @@ a.more {
           padding-left: 20px;
         }
       }
+    }
+  }
+}
+
+#news {
+  .second-container {
+    h4.title {
+      color: $navbar-default-link-hover-bg;
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+    p {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 1.5em;
+      margin-bottom: 15px;
+    }
+    p.desc {
+      font-style: italic;
+      font-size: 22px;
+      margin-bottom: 20px;
     }
   }
 }
