@@ -202,7 +202,7 @@ a.more {
   }
 }
 
-#news {
+#news{
   .second-container {
     h4.title {
       color: $navbar-default-link-hover-bg;
@@ -222,4 +222,15 @@ a.more {
     }
   }
 }
+
+#contact {
+  .second-container {
+    h4.title {
+      color: $navbar-default-link-hover-bg;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
 
