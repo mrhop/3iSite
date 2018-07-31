@@ -9,6 +9,8 @@ $navbar-default-link-hover-color: #fff !default;
 $navbar-default-link-active-bg: #ae1e23 !default;
 $navbar-default-link-hover-bg: #ae1e23 !default;
 
+$container-tablet: 100% !default;
+
 // Navbar brand label
 $navbar-default-brand-color: #0771bb !default;
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
@@ -17,6 +19,12 @@ $navbar-default-brand-color: #0771bb !default;
 h1, h2, h3 {
   color: #404041;
   font-weight: bold;
+}
+
+.navbar-nav {
+  @media (max-width: $screen-sm) {
+    margin: 7.5px 0px;
+  }
 }
 
 body {
@@ -46,12 +54,18 @@ div.header {
           cursor: pointer;
           line-height: 20px;
           letter-spacing: 1px;
-          padding-left: 20px;
-          padding-right: 20px;
-          font-size: 17px;
+          padding-left: 10px;
+          padding-right: 10px;
+          font-size: 15px;
+          @media (max-width: $screen-lg) {
+            padding-left: 8px;
+            padding-right: 8px;
+            font-size: 13px;
+          }
           @media (max-width: $screen-md) {
-            padding-left: 10px;
-            padding-right: 10px;
+            padding-left: 8px;
+            padding-right: 8px;
+            font-size: 12px;
           }
         }
       }
@@ -69,7 +83,7 @@ div.header {
   margin-bottom: 40px;
 }
 
-p {
+p, ul {
   font-size: 18px;
 }
 
@@ -185,7 +199,7 @@ a.more {
   }
 }
 
-#index, #about {
+#index {
   .second-container {
     p.two-img {
       img {
@@ -202,7 +216,17 @@ a.more {
   }
 }
 
-#news{
+#about {
+  .section1 {
+    .col-sm-8 {
+      p {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+#news {
   .second-container {
     h4.title {
       color: $navbar-default-link-hover-bg;
@@ -223,7 +247,39 @@ a.more {
   }
 }
 
-#contact {
+#business {
+  .container.second-container {
+    h4.title {
+      color: $navbar-default-link-active-bg;
+      font-size: 22px;
+      img {
+        height: 70px;
+        margin-right: 50px;
+      }
+      margin-bottom: 50px;
+    }
+    ul {
+      padding-left: 17px;
+      li {
+        margin-bottom: 15px;
+      }
+    }
+    div.row {
+      img {
+        margin-bottom: 20px;
+      }
+    }
+    .section2, .section3 {
+      hr {
+        border-top-color: #bbb;
+        margin-bottom: 50px;
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+#contact, #impressum {
   .second-container {
     h4.title {
       color: $navbar-default-link-hover-bg;
