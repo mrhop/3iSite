@@ -287,7 +287,7 @@ a.more {
       li {
         display: flex;
         align-items: flex-start;
-        margin-right: 50px;
+        padding-right: 50px;
         margin-bottom: 50px;
         div {
           p.title {
@@ -305,13 +305,14 @@ a.more {
         }
         &:nth-child(even) {
           justify-content: flex-end;
+          background: #F1F2F2;
           img {
             order: 10;
             margin-right: 0px;
             margin-left: 50px;
           }
-          margin-right: 0px;
-          margin-left: 50px;
+          padding-right: 0px;
+          padding-left: 50px;
         }
       }
     }
